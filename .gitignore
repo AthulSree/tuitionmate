@@ -1,0 +1,9 @@
+tuitionmate/__pycache__
+.vscode/
+.idea/
+*.pyc
+*.pyo
+db.sqlite3
+*.pyc
+*.pyo
+**/__pycache__/
