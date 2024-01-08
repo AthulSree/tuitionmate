@@ -76,8 +76,17 @@ WSGI_APPLICATION = 'tuitionmate.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'tuition',
+        'USER': 'root',
+        'PASSWORD': 'sr82an71',
+        'HOST': 'localhost',  # Or your MySQL host
+        'PORT': '',  # If using a custom port, specify it here
+        'OPTIONS': {
+            'charset': 'utf8mb4',
+            'use_unicode': True,
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
     }
 }
 
